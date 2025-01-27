@@ -1,15 +1,18 @@
 apiVersion: argoproj.io/v1alpha1
-kind: WorkflowTemplate
+kind: Application
 metadata:
-  name: workflow-template-print-message
+  name: workflow-template-example
+  namespace: argocd
 spec:
-  entrypoint: print-message
-  templates:
-  - name: print-message
-    inputs:
-      parameters:
-      - name: message
-    container:
-      image: busybox
-      command: [echo]
-      args: ["{{inputs.parameters.message}}"]
+  project: default
+  source:
+    repoURL: https://github.com/DavidR0/argowf-test # Replace with your repo URL
+    targetRevision: HEAD
+    path: . # Path where your WorkflowTemplate YAML is stored
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: argo # Namespace where Argo Workflows is installed
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/DavidR0/argowf-test # Replace with your repo URL
     targetRevision: HEAD
-    path: . # Path where your WorkflowTemplate YAML is stored
+    path: argowf-test # Path where your WorkflowTemplate YAML is stored
   destination:
     server: https://kubernetes.default.svc
     namespace: argo # Namespace where Argo Workflows is installed

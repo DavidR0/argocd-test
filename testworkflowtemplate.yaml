@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/part-of: argocd
   annotations:
     argocd.argoproj.io/sync-options: Prune=false
-    argocd-image-updater.argoproj.io/image-list: gcr.io/heptio-images/ks-guestbook-demo:^0.2
+    argocd-image-updater.argoproj.io/image-list: busybox:latest
     argocd-image-updater.argoproj.io/write-back-method: git
     argocd-image-updater.argoproj.io/update-strategy: semver
     argocd-image-updater.argoproj.io/myalias.force-update: "true"

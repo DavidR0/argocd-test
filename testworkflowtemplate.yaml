@@ -3,6 +3,8 @@ kind: Application
 metadata:
   name: workflow-template-example
   namespace: argocd
+  labels:
+    app.kubernetes.io/instance: some-application
   annotations:
     argocd.argoproj.io/sync-options: Prune=false
     argocd-image-updater.argoproj.io/image-list: gcr.io/heptio-images/ks-guestbook-demo:^0.1

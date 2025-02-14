@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argocd-test
+  name: argocd-test-image
   namespace: argocd
   labels:
     app.kubernetes.io/name: argocd-cm

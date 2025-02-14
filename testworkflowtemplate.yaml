@@ -14,7 +14,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/DavidR0/argowf-test # Replace with your repo URL
-    targetRevision: HEAD
+    targetRevision: main
     path: . # Path where your WorkflowTemplate YAML is stored
     directory:
       recurse: false

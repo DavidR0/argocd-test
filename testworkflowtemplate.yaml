@@ -4,7 +4,7 @@ metadata:
   name: workflow-template-example
   namespace: argocd
   annotations:
-    argocd-image-updater.argoproj.io/image-list: busybox=docker.io/busybox
+    argocd-image-updater.argoproj.io/image-list: busybox=busybox
     argocd-image-updater.argoproj.io/write-back-method: git
 spec:
   project: default

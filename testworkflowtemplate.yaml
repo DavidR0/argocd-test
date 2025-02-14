@@ -10,7 +10,6 @@ metadata:
     argocd.argoproj.io/sync-options: Prune=false
     argocd-image-updater.argoproj.io/image-list: busybox:latest
     argocd-image-updater.argoproj.io/write-back-method: git
-    argocd-image-updater.argoproj.io/update-strategy: semver
     argocd-image-updater.argoproj.io/force-update: "true"
 spec:
   project: default

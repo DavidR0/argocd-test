@@ -7,7 +7,7 @@ metadata:
     app.kubernetes.io/name: argocd-cm
     app.kubernetes.io/part-of: argocd
   annotations:
-    argocd-image-updater.argoproj.io/image-list: busybox=busybox
+    argocd-image-updater.argoproj.io/image-list: bb=busybox
     # argocd-image-updater.argoproj.io/busybox.update-strategy: newest-build
     argocd-image-updater.argoproj.io/update-strategy: semver
     argocd-image-updater.argoproj.io/write-back-method: git
